@@ -3,20 +3,28 @@
 #CAACCACACTGGCAAGAGGCAAAAAAAAAAAAAAA
 #GTGGTTG TCTTCT
 #6
-#TGTAGGCTGGGGATAAATGAATA
-
+#ACAUCCGACCCCUAUUUACUUAU
+#75
 #input('probe_sequence = ')
 
 #probe_sequence = input('probe_sequence = ')
 #probe_binding_site = input('probe_binding_site = ')
-name = input('Name of micro-RNA = ')
-probe_sequence = 'CAACCACACTGGCAAGAGGCAAAAAAAAAAAAAAA' #需要輸入的序列
+name = input('Name of Circular-DNA = ')
+
+probe_sequence = 'CAACCACACTGGCAAGAGGCAAAAAAAAAAAAAAA' 
+
 probe_binding_site = 'GTGGTTGTCTTCT' #
 mirna1 = input('Micro-RNA sequence (IN CAPITAL LETTERS) = ')
-functionless_dna_sequence_long = input('Length of functionless DNA sequence = ')
+al = input('Length of all DNA sequence (>'+str(13+len(mirna1))+') (suggest=75) = ')
+print('\n ===================================================================================')
+print('\n                                  Probe sequence')
+print('\n                       CAACCACACTGGCAAGAGGCAAAAAAAAAAAAAAA')
+
+
 
 #mirna1 = 'ACAUCCGACCCCUAUUUACUUAU'
 #functionless_dna_sequence_long = 4
+
 AUGC_table = {'A':'T','U':'A','G':'C','C':'G'}
 ATGC_table = {'A':'T','T':'A','G':'C','C':'G'}
 base = 'TCGA'
@@ -27,7 +35,12 @@ for a in mirna1:
 fn_name = name + '_circular_dna.txt'
 txtfn = open(fn_name,'w')
 ff = []
-
+q = ''
+print('\n ===================================================================================')
+print('\n                           Circular DNA sequence('+str(int(al))+')')
+print('\n       GTGGTTGTCTTCT      +  '+q.join(mirna)+'   +  _________________')
+print('   Probe_binding_site(13) +  MicroRNA_binding_site('+str(len(mirna))+') +  Unctionless_dna_sequence('+str(int(al)-13-int(len(mirna)))+')')
+print('\n ===================================================================================')
 probe_sequence_complementary_list = []
 probe_binding_site_mirna_complementary_list = []
 circular_list = []
@@ -42,7 +55,7 @@ circular_count = 0
 circular_counts = ''
 probe_binding_site_mirna_inverted_count = len(probe_binding_site)+len(mirna)
 probe_binding_site_mirna_inverted_counts = ''
-alll = len(probe_binding_site)+len(mirna)+int(functionless_dna_sequence_long)
+alll = int(al)
 
 
 
@@ -192,17 +205,21 @@ def f(n,fn_name,AT,ff,base,nons,circular_counts,codons_dict,nonss,circular_list,
                     ff.append(''.join(circular_list))
             else:
                 f(n+1,fn_name,AT,ff,base,nons,circular_counts,codons_dict,nonss,circular_list,ATGC_table,circular_count,circular_countss,alll) 
-    return '\nOutput in '+fn_name
-        #完成了
-       
-
+    return (' ')
+        #完成了Ya
+        
 print(f(circular_count+1,fn_name,AT,ff,base,nons,circular_counts,codons_dict,nonss,circular_list,ATGC_table,circular_count,circular_countss,alll))
-print('\nTotal sequence = '+str(len(ff)))
-print('\nProbe sequence = CAACCACACTGGCAAGAGGCAAAAAAAAAAAAAAA')
+        
 if len(ff) == 0:
     print('\nERROR\n\n[Maybe you should invert the micro-RNA and try it again.]')
 else:
-    print('\nSUCCESS')
+    print('\nSUCCESS')    
+    
+print('\nTotal '+str(len(ff))+' sequence ')
+
+print('\nOutput in '+fn_name)
+
+
 txtfn.write('{}\n'.format(ff))
 txtfn.close()
         
