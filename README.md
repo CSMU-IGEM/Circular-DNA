@@ -12,6 +12,7 @@ With various rules established, we successfully avoid formation of major loops i
 
 
 ### Input
+```csharp
 name = input('Name of Circular-DNA = ')
 
 probe_sequence = 'CAACCACACTGGCAAGAGGCAAAAAAAAAAAAAAA' 
