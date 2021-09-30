@@ -1,6 +1,6 @@
-# **Circular-DNA**
+# **Circular-DNA Design**
 
-## Circular-DNA Modeling - Circular DNA Design
+## Circular-DNA Modeling
 
 Our Circular DNA Design Software is made from the Python coding language. 
 This software is built for GotCha's mechanism based on Rolling Circle Amplification (RCA). 
@@ -12,7 +12,9 @@ With various rules established, we successfully avoid formation of major loops i
 
 
 ### Input
+
 ```
+
 name = input('Name of Circular-DNA = ')
 
 probe_sequence = 'CAACCACACTGGCAAGAGGCAAAAAAAAAAAAAAA' 
@@ -27,6 +29,9 @@ print('\n                       CAACCACACTGGCAAGAGGCAAAAAAAAAAAAAAA')
 ```
 
 ### Output
+
+```
+
 AUGC_table = {'A':'T','U':'A','G':'C','C':'G'}
 ATGC_table = {'A':'T','T':'A','G':'C','C':'G'}
 base = 'TCGA'
@@ -43,6 +48,13 @@ print('\n                           Circular DNA sequence('+str(int(al))+')')
 print('\n       GTGGTTGTCTTCT      +  '+q.join(mirna)+'   +  _________________')
 print('   Probe_binding_site(13) +  MicroRNA_binding_site('+str(len(mirna))+') +  Unctionless_dna_sequence('+str(int(al)-13-int(len(mirna)))+')')
 print('\n ===================================================================================')
+
+```
+
+### 參數
+
+```
+
 probe_sequence_complementary_list = []
 probe_binding_site_mirna_complementary_list = []
 circular_list = []
@@ -66,8 +78,12 @@ probe_inverted_complementary = ''
 probe_binding_site_mirna_inverted_complementary = ''
 nons = ''
 
+```
 
 ### probe
+
+```
+
 for a in probe_sequence:
     probe_sequence_complementary_list += ATGC_table[a]
     probe_count += 1
@@ -88,8 +104,6 @@ for a in probe_complementary_dict.keys():
   
 nons += probe_complementary
 
-
-
 #probe互補倒序
 for a in probe_complementary_inverted_dict.keys():
     if int(a)+2 <= probe_count:
@@ -100,8 +114,6 @@ for a in probe_complementary_inverted_dict.keys():
 
 nons += probe_inverted_complementary
 
-
-
 #probe_binding_site互補倒序
 for a in probe_binding_site:
     circular_list += a
@@ -110,8 +122,13 @@ for a in probe_binding_site:
     probe_binding_site_mirna_inverted_count -= 1
     circular_counts += '{} '.format(str(circular_count))
     probe_binding_site_mirna_inverted_counts += '{} '.format(str(probe_binding_site_mirna_inverted_count))
-    
-#mirna互補倒序
+
+```
+
+### mirna互補倒序
+
+```
+
 for a in mirna:
     circular_list += a
     probe_binding_site_mirna_complementary_list += ATGC_table[a]
@@ -133,7 +150,12 @@ for a in probe_binding_site_mirna_complementary_inverted_dict.keys():
 nons += probe_binding_site_mirna_inverted_complementary      
 AT = 0
 w = 0
-#functionless_dna_sequence互補倒序
+
+```
+
+### functionless_dna_sequence互補倒序
+
+```
 
 nonss = nons.split('\t')
 circular_countss = []
@@ -225,7 +247,4 @@ print('\nOutput in '+fn_name)
 txtfn.write('{}\n'.format(ff))
 txtfn.close()
         
-        
-        
-        
-        
+```      
