@@ -1,6 +1,6 @@
-# Circular-DNA
+# **Circular-DNA**
 
-Circular-DNA Modeling - Circular DNA Design
+## Circular-DNA Modeling - Circular DNA Design
 
 Our Circular DNA Design Software is made from the Python coding language. 
 This software is built for GotCha's mechanism based on Rolling Circle Amplification (RCA). 
@@ -11,7 +11,9 @@ With various rules established, we successfully avoid formation of major loops i
 +coding+
 
 
-## name = input('Name of Circular-DNA = ')
+
+
+name = input('Name of Circular-DNA = ')
 
 probe_sequence = 'CAACCACACTGGCAAGAGGCAAAAAAAAAAAAAAA' 
 
