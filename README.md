@@ -12,7 +12,7 @@ With various rules established, we successfully avoid formation of major loops i
 
 
 ### Input
-```csharp
+```
 name = input('Name of Circular-DNA = ')
 
 probe_sequence = 'CAACCACACTGGCAAGAGGCAAAAAAAAAAAAAAA' 
@@ -24,7 +24,7 @@ print('\n ======================================================================
 print('\n                                  Probe sequence')
 print('\n                       CAACCACACTGGCAAGAGGCAAAAAAAAAAAAAAA')
 
-```csharp
+```
 
 ### Output
 AUGC_table = {'A':'T','U':'A','G':'C','C':'G'}
