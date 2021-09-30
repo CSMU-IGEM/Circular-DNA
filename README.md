@@ -22,9 +22,6 @@ probe_sequence = 'CAACCACACTGGCAAGAGGCAAAAAAAAAAAAAAA'
 probe_binding_site = 'GTGGTTGTCTTCT' 
 mirna1 = input('Micro-RNA sequence (IN CAPITAL LETTERS) = ')
 al = input('Length of all DNA sequence (>'+str(13+len(mirna1))+') (suggest=75) = ')
-print('\n ===================================================================================')
-print('\n                                  Probe sequence')
-print('\n                       CAACCACACTGGCAAGAGGCAAAAAAAAAAAAAAA')
 
 ```
 
@@ -32,6 +29,9 @@ print('\n                       CAACCACACTGGCAAGAGGCAAAAAAAAAAAAAAA')
 
 ```
 
+print('\n ===================================================================================')
+print('\n                                  Probe sequence')
+print('\n                       CAACCACACTGGCAAGAGGCAAAAAAAAAAAAAAA')
 AUGC_table = {'A':'T','U':'A','G':'C','C':'G'}
 ATGC_table = {'A':'T','T':'A','G':'C','C':'G'}
 base = 'TCGA'
