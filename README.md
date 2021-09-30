@@ -24,7 +24,7 @@ print('\n ======================================================================
 print('\n                                  Probe sequence')
 print('\n                       CAACCACACTGGCAAGAGGCAAAAAAAAAAAAAAA')
 
-
+```csharp
 
 ### Output
 AUGC_table = {'A':'T','U':'A','G':'C','C':'G'}
