@@ -8,8 +8,7 @@ With user input of target micro-RNA sequence for capture, Circular DNA Design is
 With various rules established, we successfully avoid formation of major loops in circular DNA sequences while maximising thermodynamic stability. 
 
 ```diff
-+ this will be highlighted in green
-- this will be highlighted in red
+coding
 
 
 name = input('Name of Circular-DNA = ')
