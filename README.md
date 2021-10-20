@@ -141,6 +141,7 @@ for a in probe_binding_site:
 ```
 
 ### Reverse complementary sequence of miR
+Then, we also took into account the reverse complementary sequence of the target miRNA itself. 
 
 ```
 
@@ -169,6 +170,7 @@ w = 0
 ```
 
 ### Reverse Complementary Sequence of Functionless DNA Sequence 
+Lastly, we made sure not to repeat reverse complementary sequences of the functionless DNA sequence in the Circular DNA probe. 
 
 ```
 
