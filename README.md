@@ -12,11 +12,11 @@ With various rules established, we successfully avoid formation of major loops i
 
 
 ### Input
-```diff 
-!In the input, we allow the user to input the name of the Circular DNA, which will then be the name of the txt. file exported after running the code. <br/>
+
+In the input, we allow the user to input the name of the Circular DNA, which will then be the name of the txt. file exported after running the code. <br/>
 Then, we show the default Immobilisation Probe binding site on the circular DNA we designed. <br/>
 After which, according to the needs of the user, they can input the total length of the Circular DNA Sequence of their choice. 
-```
+
 
 ```
 
