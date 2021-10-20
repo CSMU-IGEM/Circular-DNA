@@ -24,7 +24,7 @@ mirna1 = input('Micro-RNA sequence (IN CAPITAL LETTERS) = ')
 al = input('Length of all DNA sequence (>'+str(13+len(mirna1))+') (suggest=75) = ')
 
 ```
-
+hi
 ### Output
 
 ```
