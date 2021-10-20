@@ -109,7 +109,7 @@ for a in probe_sequence:
 probe_complementary_dict = dict(zip(probe_counts.split(' '),probe_sequence_complementary_list))
 probe_complementary_inverted_dict = dict(zip(probe_inverted_counts.split(' '),probe_sequence_complementary_list))
     
-#probe互補                           
+                          
 for a in probe_complementary_dict.keys():
     if int(a)+2 <= probe_count:
         x = probe_complementary_dict[a]
