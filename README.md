@@ -53,8 +53,10 @@ print('   Probe_binding_site(13) +  MicroRNA_binding_site('+str(len(mirna))+') +
 print('\n ===================================================================================')
 
 ```
+For the output of the code, we first show the DNA sequence of our immobilisation probe. <br/>
+Then, we create a list, of which the different permutations of bases are added into the list and exported as a txt. file. <br/>
 
-### Constants
+### Parameters
 
 ```
 
@@ -82,6 +84,8 @@ probe_binding_site_mirna_inverted_complementary = ''
 nons = ''
 
 ```
+For the parameters used in our code, we first create lists for probe sequence complementary, probe binding site, circular probe, and functionless sequence bases. <br/>
+
 
 ### probe
 
@@ -127,6 +131,7 @@ for a in probe_binding_site:
     probe_binding_site_mirna_inverted_counts += '{} '.format(str(probe_binding_site_mirna_inverted_count))
 
 ```
+Using a for loop, we 
 
 ### mirna互補倒序
 
