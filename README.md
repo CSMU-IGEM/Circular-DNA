@@ -24,7 +24,7 @@ mirna1 = input('Micro-RNA sequence (IN CAPITAL LETTERS) = ')
 al = input('Length of all DNA sequence (>'+str(13+len(mirna1))+') (suggest=75) = ')
 
 ```
-In the input, we allow the user to input the name of the Circular DNA, which will then be the name of the txt. file exported after running the code. 
+In the input, we allow the user to input the name of the Circular DNA, which will then be the name of the txt. file exported after running the code. <br/>
 Then, we show the default Immobilisation Probe binding site on the circular DNA we designed. 
 After which, according to the needs of the user, they can input the total length of the Circular DNA Sequence of their choice. 
 
