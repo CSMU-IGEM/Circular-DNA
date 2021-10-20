@@ -87,7 +87,7 @@ nons = ''
 For the parameters used in our code, we first create lists for probe sequence complementary, probe binding site, circular probe, and functionless sequence bases. <br/>
 
 
-### probe
+### Probe Design
 
 ```
 
@@ -133,7 +133,7 @@ for a in probe_binding_site:
 ```
 Using a for loop, we 
 
-### mirna互補倒序
+### Reverse complementary sequence of miR
 
 ```
 
@@ -161,7 +161,7 @@ w = 0
 
 ```
 
-### functionless_dna_sequence互補倒序
+### Reverse Complementary Sequence of Functionless DNA Sequence 
 
 ```
 
