@@ -13,9 +13,9 @@ With various rules established, we successfully avoid formation of major loops i
 
 ### Input
 
-    In the input, we allow the user to input the name of the Circular DNA, which will then be the name of the txt. file exported after running the code. <br/>
-    Then, we show the default Immobilisation Probe binding site on the circular DNA we designed. <br/>
-    After which, according to the needs of the user, they can input the total length of the Circular DNA Sequence of their choice. 
+In the input, we allow the user to input the name of the Circular DNA, which will then be the name of the txt. file exported after running the code. <br/>
+Then, we show the default Immobilisation Probe binding site on the circular DNA we designed. <br/>
+After which, according to the needs of the user, they can input the total length of the Circular DNA Sequence of their choice. 
 
 
 ```
@@ -93,7 +93,9 @@ nons = ''
 
 
 ### Probe Design
-For the Circular DNA Probe Design, we considered the complementary and reverse complementary sequence for the immobilisation probe and its binding site.  
+For the Circular DNA Probe Design, we considered: <br/>
+complementary and reverse complementary sequence for the immobilisation probe and <br/>
+complementary and reverse complementary sequence for immobilisation probe binding site.  <br/>
 
 ```
 
