@@ -1,4 +1,4 @@
-# **Circular-DNA Desig**
+# **Circular-DNA Design**
 
 ## Introduction
 
