@@ -119,7 +119,7 @@ for a in probe_complementary_dict.keys():
   
 nons += probe_complementary
 
-#probe互補倒序
+
 for a in probe_complementary_inverted_dict.keys():
     if int(a)+2 <= probe_count:
         x = probe_complementary_inverted_dict[a]
@@ -129,7 +129,7 @@ for a in probe_complementary_inverted_dict.keys():
 
 nons += probe_inverted_complementary
 
-#probe_binding_site互補倒序
+
 for a in probe_binding_site:
     circular_list += a
     probe_binding_site_mirna_complementary_list += ATGC_table[a]
@@ -230,10 +230,10 @@ def f(n,fn_name,AT,ff,base,nons,circular_counts,codons_dict,nonss,circular_list,
         if non == 0:
             add_codons = '{}{}{}\t'.format(ATGC_table[x],ATGC_table[y],ATGC_table[z])
             nons += add_codons
-            nonss = nons.split('\t') #三個nt一組
+            nonss = nons.split('\t') 
             circular_count += 1
-            circular_list += codon #全部序列
-            circular_counts = '{} '.format(str(circular_count)) #數字
+            circular_list += codon 
+            circular_counts = '{} '.format(str(circular_count)) 
             circular_countss += circular_counts.split(' ')
             circular_countss.pop()
             codons_dict = dict(zip(circular_countss,circular_list))
@@ -247,7 +247,7 @@ def f(n,fn_name,AT,ff,base,nons,circular_counts,codons_dict,nonss,circular_list,
             else:
                 f(n+1,fn_name,AT,ff,base,nons,circular_counts,codons_dict,nonss,circular_list,ATGC_table,circular_count,circular_countss,alll) 
     return (' ')
-        #完成了Ya
+        
         
 print(f(circular_count+1,fn_name,AT,ff,base,nons,circular_counts,codons_dict,nonss,circular_list,ATGC_table,circular_count,circular_countss,alll))
         
